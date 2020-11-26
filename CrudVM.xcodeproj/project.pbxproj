@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C1BC76525700FFB0099C106 /* NewConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1BC76425700FFB0099C106 /* NewConfigViewController.swift */; };
 		7C7530A4256E00E9009DC7FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7530A3256E00E9009DC7FA /* AppDelegate.swift */; };
 		7C7530A6256E00E9009DC7FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7530A5256E00E9009DC7FA /* ViewController.swift */; };
 		7C7530A9256E00E9009DC7FA /* CrudVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C7530A7256E00E9009DC7FA /* CrudVM.xcdatamodeld */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C1BC76425700FFB0099C106 /* NewConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConfigViewController.swift; sourceTree = "<group>"; };
 		7C7530A0256E00E9009DC7FA /* CrudVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrudVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C7530A3256E00E9009DC7FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C7530A5256E00E9009DC7FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				7C7530A3256E00E9009DC7FA /* AppDelegate.swift */,
 				7C7530A5256E00E9009DC7FA /* ViewController.swift */,
+				7C1BC76425700FFB0099C106 /* NewConfigViewController.swift */,
 				7C7530AA256E00EA009DC7FA /* Assets.xcassets */,
 				7C7530AC256E00EA009DC7FA /* Main.storyboard */,
 				7C7530AF256E00EA009DC7FA /* Info.plist */,
@@ -259,6 +262,7 @@
 				7C7530A6256E00E9009DC7FA /* ViewController.swift in Sources */,
 				7C7530A9256E00E9009DC7FA /* CrudVM.xcdatamodeld in Sources */,
 				7C7530A4256E00E9009DC7FA /* AppDelegate.swift in Sources */,
+				7C1BC76525700FFB0099C106 /* NewConfigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

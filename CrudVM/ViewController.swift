@@ -41,6 +41,8 @@ class ViewController: NSViewController{
     
     
     @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet weak var addItem: NSToolbarItem!
+    
     var systems:[[String:Any]] = [ ]
     var configs:[config] = []
     
@@ -87,6 +89,7 @@ extension ViewController:NSTableViewDelegate{
         case nameKey:
             view?.textField?.stringValue = systems[row][nameKey] as? String ?? "noName"
         case statusKey:
+            view?.textField?.stringValue = ""
             //TODO:I'd like to drop in a imageview to represent status here, but i need to dive deeper into creating a custom NSTableCell or NSTableView
             addImageToCell(systemSymbolName: "NSImageNameAddTemplate", cell: view!)
         case descKey:
