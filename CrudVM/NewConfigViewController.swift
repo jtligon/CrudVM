@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import Cocoa
 
-class NewConfigViewController: ViewController {
+class NewConfigViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
