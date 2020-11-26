@@ -82,22 +82,28 @@ extension ViewController:NSTableViewDataSource{
 extension ViewController:NSTableViewDelegate{
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let view = tableView.makeView(withIdentifier:NSUserInterfaceItemIdentifier(rawValue: "configs"), owner: self) as? NSTableCellView
+        guard let cellView = tableView.makeView(withIdentifier:
+                NSUserInterfaceItemIdentifier(rawValue: "configs"),
+                owner: self) as? NSTableCellView
+            else {
+                return nil
+            }
+        
         
         //customize per column
         switch tableColumn?.headerCell.stringValue {
         case nameKey:
-            view?.textField?.stringValue = systems[row][nameKey] as? String ?? "noName"
+            cellView.textField?.stringValue = systems[row][nameKey] as? String ?? "noName"
         case statusKey:
-            view?.textField?.stringValue = ""
+            cellView.textField?.stringValue = ""
             //TODO:I'd like to drop in a imageview to represent status here, but i need to dive deeper into creating a custom NSTableCell or NSTableView
-            addImageToCell(systemSymbolName: "NSImageNameAddTemplate", cell: view!)
+            addImageToCell(systemSymbolName: "NSImageNameAddTemplate", cell: cellView)
         case descKey:
-            view?.textField?.stringValue = systems[row][descKey] as? String ?? "noDesc"
+            cellView.textField?.stringValue = systems[row][descKey] as? String ?? "noDesc"
         default:
-            view?.textField?.stringValue = ""
+            cellView.textField?.stringValue = ""
         }
-        return view
+        return cellView
     }
     
     func addImageToCell(systemSymbolName:String, cell:NSTableCellView){
